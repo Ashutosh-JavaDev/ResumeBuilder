@@ -1,5 +1,5 @@
 import javax.swing.*;
-public class Resume {
+public class Resume extends JFrame{
     Resume() {
 
     }
