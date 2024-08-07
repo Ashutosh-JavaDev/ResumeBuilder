@@ -1,7 +1,8 @@
 public class Resume {
-    Resume(){
+    Resume() {
 
     }
+
     public static void main(String[] args) throws Exception {
         new Resume();
     }
