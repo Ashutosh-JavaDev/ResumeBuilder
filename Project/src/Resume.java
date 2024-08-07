@@ -8,11 +8,8 @@ public class Resume extends JFrame implements ActionListener {
 
     }
 
-    public static void main(String[] args) throws Exception {
-        new Resume();
-    }
     @Override
     public void actionPerformed(ActionEvent ae){
-        
+
     }
 }
