@@ -1,5 +1,7 @@
 import javax.swing.*;
-public class Resume extends JFrame{
+import java.awt.event.ActionListener;
+
+public class Resume extends JFrame implements ActionListener {
     Resume() {
 
     }
