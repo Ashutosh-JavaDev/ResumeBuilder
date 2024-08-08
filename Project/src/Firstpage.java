@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 public class Firstpage extends JFrame implements ActionListener {
     JLabel Firstname,Lastname,link,number,email,about,Education,skills,Experience;
-    JTextField Namefield;
+    JTextField Firstfield,Lastfield,linkfield,Numberfield,Aboutfield,Educationfield,Experiencefield;
     Firstpage() {
         setTitle("Resume Builder");
         setSize(500, 800);
