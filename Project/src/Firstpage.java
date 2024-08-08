@@ -3,8 +3,9 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Resume extends JFrame implements ActionListener {
-    Resume() {
+public class Firstpage extends JFrame implements ActionListener {
+    JLabel Firstname,Lastname,link,number,email,about,Education,skills,Experience;
+    Firstpage() {
         setTitle("Resume Builder");
         setSize(500, 800);
         setLayout(null);
