@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 public class Resume extends JFrame implements ActionListener {
     Resume() {
         setTitle("Resume Builder");
-        setSize(500,800);
+        setSize(500, 800);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
@@ -14,7 +14,7 @@ public class Resume extends JFrame implements ActionListener {
     }
 
     @Override
-    public void actionPerformed(ActionEvent ae){
+    public void actionPerformed(ActionEvent ae) {
 
     }
 }
