@@ -13,9 +13,11 @@ public class Resume extends JFrame implements ActionListener {
         setVisible(true);
 
     }
-    private void dateEntry(){
+
+    private void dateEntry() {
 
     }
+
     @Override
     public void actionPerformed(ActionEvent ae) {
 
