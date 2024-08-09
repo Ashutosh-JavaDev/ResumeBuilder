@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.Graphics;
 import java.awt.GridLayout;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -62,8 +63,19 @@ public class Firstpage extends JFrame implements ActionListener {
         label[8] = Experience;
 
         for (int i = 0; i < 9; i++) {
-
+            label[i].setFont(new Font("Segoe UI",Font.PLAIN,18));
+            label[i].setFocusable(false);
         }
+        panel.add(label[0]);
+        panel.add(label[1]);
+        panel.add(label[2]);
+        panel.add(label[3]);
+        panel.add(label[4]);
+        panel.add(label[5]);
+        panel.add(label[6]);
+        panel.add(label[7]);
+        panel.add(label[8]);
+
     }
 
     @Override
