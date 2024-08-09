@@ -12,7 +12,8 @@ public class Firstpage extends JFrame implements ActionListener {
     JLabel first, last, link, number, email, about, Education, skills, Experience;
     JTextField field[] = new JTextField[9];
     JPanel panel;
-    JTextField Firstfield,Lastfield,linkfield,Numberfield,emailfield,Aboutfield,Educationfield,Experiencefield,skillfield;
+    JTextField Firstfield, Lastfield, linkfield, Numberfield, emailfield, Aboutfield, Educationfield, Experiencefield,
+            skillfield;
 
     Firstpage() {
         setTitle("Resume Builder");
@@ -54,10 +55,10 @@ public class Firstpage extends JFrame implements ActionListener {
         about = new JLabel("About");
         Education = new JLabel("Education");
         Experience = new JLabel("Experience");
-        JLabel[] labels = {first, last, link, number, email, about, skills, Education, Experience};
+        JLabel[] labels = { first, last, link, number, email, about, skills, Education, Experience };
 
         for (int i = 0; i < labels.length; i++) {
-            labels[i].setFont(new Font("Segoe UI",Font.BOLD,18));
+            labels[i].setFont(new Font("Segoe UI", Font.BOLD, 18));
             labels[i].setForeground(Color.black);
             labels[i].setFocusable(false);
             panel.add(Box.createRigidArea(new Dimension(0, 10)));
@@ -65,16 +66,17 @@ public class Firstpage extends JFrame implements ActionListener {
         }
 
     }
-    private void fieldFunction(){
-        Firstfield=new JTextField();
-        Lastfield=new JTextField();
-        linkfield=new JTextField();
-        Numberfield=new JTextField();
-        skillfield=new JTextField();
-        emailfield=new JTextField();
-        Aboutfield=new JTextField();
-        Educationfield=new JTextField();
-        Experiencefield=new JTextField();
+
+    private void fieldFunction() {
+        Firstfield = new JTextField();
+        Lastfield = new JTextField();
+        linkfield = new JTextField();
+        Numberfield = new JTextField();
+        skillfield = new JTextField();
+        emailfield = new JTextField();
+        Aboutfield = new JTextField();
+        Educationfield = new JTextField();
+        Experiencefield = new JTextField();
     }
 
     @Override
