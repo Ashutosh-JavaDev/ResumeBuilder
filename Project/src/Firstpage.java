@@ -24,7 +24,7 @@ public class Firstpage extends JFrame implements ActionListener {
 
     private void dateEntry() {
         panel = new JPanel() {
-            @Override
+            // @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
                 // Set the color with RGB and alpha (for transparency)
