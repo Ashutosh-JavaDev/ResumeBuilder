@@ -7,11 +7,10 @@ import java.awt.event.ActionListener;
 
 public class Firstpage extends JFrame implements ActionListener {
     JLabel label[] = new JLabel[9];
-    JLabel Firstname, Lastname, link, number, email, about, Education, skills, Experience;
+    JLabel first, last, link, number, email, about, Education, skills, Experience;
     JTextField field[] = new JTextField[9];
     JPanel panel;
-    // Firstfield,Lastfield,linkfield,Numberfield,Aboutfield,Educationfield,Experiencefield;
-    JComboBox Skillfield;
+    // Firstfield,Lastfield,linkfield,Numberfield,Aboutfield,Educationfield,Experiencefield,skillfield;
 
     Firstpage() {
         setTitle("Resume Builder");
@@ -43,6 +42,15 @@ public class Firstpage extends JFrame implements ActionListener {
     }
 
     private void PanelFunction() {
+        first=new JLabel("First Name");
+        last=new JLabel("Last Name");
+        link=new JLabel("Links");
+        number=new JLabel("Number");
+        skills=new JLabel("Skills");
+        email=new JLabel("Email ID");
+        about=new JLabel("About");
+        Education=new JLabel("Education");
+        Experience=new JLabel("Experience");
 
         for (int i = 0; i < 9; i++) {
 
