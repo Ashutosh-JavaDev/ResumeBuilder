@@ -1,5 +1,5 @@
 import javax.swing.*;
-
+import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,19 +16,28 @@ public class Firstpage extends JFrame implements ActionListener {
         setSize(500, 800);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocation(100,400);
+        setLocation(100,100);
         dateEntry();
         setVisible(true);
 
     }
 
     private void dateEntry() {
-        panel=new JPanel();
-        panel.setSize(490,790);
-        panel.setBounds(5,5,495,795);
-        panel.setBackground(Color.black);
+        panel = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                // Set the color with RGB and alpha (for transparency)
+                g.setColor(new Color(0, 0, 0, 50)); // 50 is the alpha value for light opacity
+                g.fillRect(0, 0, getWidth(), getHeight());
+            }
+        };
+        panel.setSize(490, 790);
+        panel.setBounds(5, 5, 490, 790);
+        panel.setOpaque(false); // Allows the transparency effect
         add(panel);
     }
+    
 
     @Override
     public void actionPerformed(ActionEvent ae) {
