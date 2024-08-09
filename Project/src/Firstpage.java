@@ -18,6 +18,7 @@ public class Firstpage extends JFrame implements ActionListener {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(100,100);
         Panel();
+        PanelFunction();
         setVisible(true);
 
     }
@@ -37,7 +38,9 @@ public class Firstpage extends JFrame implements ActionListener {
         panel.setOpaque(false); // Allows the transparency effect
         add(panel);
     }
-    
+    private void PanelFunction(){
+
+    }
 
     @Override
     public void actionPerformed(ActionEvent ae) {
