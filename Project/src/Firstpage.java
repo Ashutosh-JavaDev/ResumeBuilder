@@ -36,7 +36,7 @@ public class Firstpage extends JFrame implements ActionListener {
             }
         };
         panel.setSize(590, 790);
-        panel.setLayout(new GridLayout(2, 4, 25, 25));
+        panel.setLayout(new GridLayout(4, 2, 25, 25));
         panel.setBounds(5, 5, 590, 790);
         panel.setOpaque(false); // Allows the transparency effect
         add(panel);
@@ -63,7 +63,8 @@ public class Firstpage extends JFrame implements ActionListener {
         label[8] = Experience;
 
         for (int i = 0; i < 9; i++) {
-            label[i].setFont(new Font("Segoe UI",Font.PLAIN,18));
+            label[i].setFont(new Font("Segoe UI",Font.BOLD,18));
+            label[i].setForeground(Color.white);
             label[i].setFocusable(false);
         }
         panel.add(label[0]);
