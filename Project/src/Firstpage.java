@@ -77,6 +77,15 @@ public class Firstpage extends JFrame implements ActionListener {
         Aboutfield = new JTextField();
         Educationfield = new JTextField();
         Experiencefield = new JTextField();
+        JTextField field[]={Firstfield,Lastfield,linkfield,Numberfield,skillfield,emailfield,Aboutfield,Educationfield,Experiencefield};
+        for (int i = 0; i < field.length; i++) {
+            field[i].setFont(new Font("Segoe UI", Font.BOLD, 18));
+            field[i].setForeground(Color.black);
+            field[i].setFocusable(false);
+            panel.add(Box.createRigidArea(new Dimension(0, 10)));
+            panel.add(field[i]);
+        }
+
     }
 
     @Override
