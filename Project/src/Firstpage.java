@@ -24,7 +24,8 @@ public class Firstpage extends JFrame implements ActionListener {
 
     private void dateEntry() {
         panel=new JPanel();
-        panel.setSize(380,780);
+        panel.setSize(490,790);
+        panel.setBounds(5,5,495,795);
         panel.setBackground(Color.black);
         add(panel);
     }
