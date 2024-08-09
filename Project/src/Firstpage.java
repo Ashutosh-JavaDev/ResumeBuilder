@@ -17,12 +17,12 @@ public class Firstpage extends JFrame implements ActionListener {
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(100,100);
-        dateEntry();
+        Panel();
         setVisible(true);
 
     }
 
-    private void dateEntry() {
+    private void Panel() {
         panel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
