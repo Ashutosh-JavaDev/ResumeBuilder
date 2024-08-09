@@ -5,18 +5,19 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Firstpage extends JFrame implements ActionListener {
-    JLabel label[]=new JLabel[9];
-    //  Firstname,Lastname,link,number,email,about,Education,skills,Experience;
-    JTextField field[]=new JTextField[9];
+    JLabel label[] = new JLabel[9];
+    JLabel Firstname, Lastname, link, number, email, about, Education, skills, Experience;
+    JTextField field[] = new JTextField[9];
     JPanel panel;
     // Firstfield,Lastfield,linkfield,Numberfield,Aboutfield,Educationfield,Experiencefield;
     JComboBox Skillfield;
+
     Firstpage() {
         setTitle("Resume Builder");
         setSize(600, 800);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocation(100,100);
+        setLocation(100, 100);
         Panel();
         PanelFunction();
         setVisible(true);
@@ -38,8 +39,12 @@ public class Firstpage extends JFrame implements ActionListener {
         panel.setOpaque(false); // Allows the transparency effect
         add(panel);
     }
-    private void PanelFunction(){
 
+    private void PanelFunction() {
+
+        for (int i = 0; i < 9; i++) {
+
+        }
     }
 
     @Override
