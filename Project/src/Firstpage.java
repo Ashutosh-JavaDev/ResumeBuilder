@@ -37,7 +37,7 @@ public class Firstpage extends JFrame implements ActionListener {
             }
         };
         panel.setSize(590, 790);
-        panel.setLayout(new GridLayout(4, 2, 25, 25));
+        panel.setLayout(new GridLayout(4, 2, 50, 25));
         panel.setBounds(5, 5, 590, 790);
         panel.setOpaque(false); // Allows the transparency effect
         add(panel);
