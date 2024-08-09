@@ -12,7 +12,7 @@ public class Firstpage extends JFrame implements ActionListener {
     JLabel first, last, link, number, email, about, Education, skills, Experience;
     JTextField field[] = new JTextField[9];
     JPanel panel;
-    // Firstfield,Lastfield,linkfield,Numberfield,Aboutfield,Educationfield,Experiencefield,skillfield;
+    JTextField Firstfield,Lastfield,linkfield,Numberfield,Aboutfield,Educationfield,Experiencefield,skillfield;
 
     Firstpage() {
         setTitle("Resume Builder");
