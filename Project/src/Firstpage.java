@@ -32,12 +32,12 @@ public class Firstpage extends JFrame implements ActionListener {
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
                 // Set the color with RGB and alpha (for transparency)
-                g.setColor(new Color(0, 0, 0, 80)); // 50 is the alpha value for light opacity
+                g.setColor(new Color(204, 255, 255, 50)); // 50 is the alpha value for light opacity
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
         panel.setSize(590, 790);
-        panel.setLayout(new GridLayout(4, 2, 50, 25));
+        panel.setLayout(new GridLayout(4, 2, 10, 25));
         panel.setBounds(5, 5, 590, 790);
         panel.setOpaque(false); // Allows the transparency effect
         add(panel);
