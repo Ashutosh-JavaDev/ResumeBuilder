@@ -21,7 +21,7 @@ public class Firstpage extends JFrame implements ActionListener {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(100, 100);
         Panel();
-        PanelFunction();
+        labelFunction();
         setVisible(true);
 
     }
@@ -43,7 +43,7 @@ public class Firstpage extends JFrame implements ActionListener {
         add(panel);
     }
 
-    private void PanelFunction() {
+    private void labelFunction() {
         first = new JLabel("First Name");
         last = new JLabel("Last Name");
         link = new JLabel("Links");
