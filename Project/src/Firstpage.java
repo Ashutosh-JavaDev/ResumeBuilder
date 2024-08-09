@@ -32,7 +32,7 @@ public class Firstpage extends JFrame implements ActionListener {
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
                 // Set the color with RGB and alpha (for transparency)
-                g.setColor(new Color(204, 255, 255, 50)); // 50 is the alpha value for light opacity
+                g.setColor(new Color(0, 204, 204, 50)); // 50 is the alpha value for light opacity
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
@@ -57,7 +57,7 @@ public class Firstpage extends JFrame implements ActionListener {
 
         for (int i = 0; i < labels.length; i++) {
             labels[i].setFont(new Font("Segoe UI",Font.BOLD,18));
-            labels[i].setForeground(Color.white);
+            labels[i].setForeground(Color.black);
             labels[i].setFocusable(false);
             panel.add(Box.createRigidArea(new Dimension(0, 10)));
             panel.add(labels[i]);
