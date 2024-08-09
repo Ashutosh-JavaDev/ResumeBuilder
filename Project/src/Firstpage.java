@@ -25,7 +25,6 @@ public class Firstpage extends JFrame implements ActionListener {
         labelFunction();
         fieldFunction();
         setVisible(true);
-
     }
 
     private void Panel() {
@@ -39,7 +38,7 @@ public class Firstpage extends JFrame implements ActionListener {
             }
         };
         panel.setSize(590, 790);
-        panel.setLayout(new GridLayout(4, 2, 10, 25));
+        panel.setLayout(new GridLayout(18, 1, 10, 10)); // Adjusted layout for 9 labels and 9 text fields
         panel.setBounds(5, 5, 590, 790);
         panel.setOpaque(false); // Allows the transparency effect
         add(panel);
@@ -61,10 +60,8 @@ public class Firstpage extends JFrame implements ActionListener {
             labels[i].setFont(new Font("Segoe UI", Font.BOLD, 18));
             labels[i].setForeground(Color.black);
             labels[i].setFocusable(false);
-            panel.add(Box.createRigidArea(new Dimension(0, 10)));
             panel.add(labels[i]);
         }
-
     }
 
     private void fieldFunction() {
@@ -77,19 +74,21 @@ public class Firstpage extends JFrame implements ActionListener {
         Aboutfield = new JTextField();
         Educationfield = new JTextField();
         Experiencefield = new JTextField();
-        JTextField field[]={Firstfield,Lastfield,linkfield,Numberfield,skillfield,emailfield,Aboutfield,Educationfield,Experiencefield};
-        for (int i = 0; i < field.length; i++) {
-            field[i].setFont(new Font("Segoe UI", Font.BOLD, 18));
-            field[i].setForeground(Color.black);
-            field[i].setFocusable(false);
-            panel.add(Box.createRigidArea(new Dimension(0, 10)));
-            panel.add(field[i]);
-        }
+        JTextField[] fields = { Firstfield, Lastfield, linkfield, Numberfield, skillfield, emailfield, Aboutfield, Educationfield, Experiencefield };
 
+        for (int i = 0; i < fields.length; i++) {
+            fields[i].setFont(new Font("Segoe UI", Font.BOLD, 18));
+            fields[i].setForeground(Color.black);
+            panel.add(fields[i]);
+        }
     }
 
     @Override
     public void actionPerformed(ActionEvent ae) {
+        // Handle actions here
+    }
 
+    public static void main(String[] args) {
+        new Firstpage();
     }
 }
