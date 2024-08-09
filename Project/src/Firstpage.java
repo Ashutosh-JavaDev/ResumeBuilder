@@ -7,6 +7,7 @@ public class Firstpage extends JFrame implements ActionListener {
     JLabel label[]=new JLabel[9];
     //  Firstname,Lastname,link,number,email,about,Education,skills,Experience;
     JTextField field[]=new JTextField[9];
+    JPanel panel;
     // Firstfield,Lastfield,linkfield,Numberfield,Aboutfield,Educationfield,Experiencefield;
     JComboBox Skillfield;
     Firstpage() {
@@ -20,7 +21,7 @@ public class Firstpage extends JFrame implements ActionListener {
     }
 
     private void dateEntry() {
-
+        
     }
 
     @Override
