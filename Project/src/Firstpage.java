@@ -51,15 +51,15 @@ public class Firstpage extends JFrame implements ActionListener {
         about = new JLabel("About");
         Education = new JLabel("Education");
         Experience = new JLabel("Experience");
-        label[0]=first;
-        label[1]=last;
-        label[2]=link;
-        label[3]=number;
-        label[4]=email;
-        label[5]=about;
-        label[6]=skills;
-        label[7]=Education;
-        label[8]=Experience;
+        label[0] = first;
+        label[1] = last;
+        label[2] = link;
+        label[3] = number;
+        label[4] = email;
+        label[5] = about;
+        label[6] = skills;
+        label[7] = Education;
+        label[8] = Experience;
 
         for (int i = 0; i < 9; i++) {
 
