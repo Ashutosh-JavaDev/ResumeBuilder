@@ -22,6 +22,7 @@ public class Firstpage extends JFrame implements ActionListener {
         setLocation(100, 100);
         Panel();
         labelFunction();
+        fieldFunction();
         setVisible(true);
 
     }
@@ -62,6 +63,9 @@ public class Firstpage extends JFrame implements ActionListener {
             panel.add(Box.createRigidArea(new Dimension(0, 10)));
             panel.add(labels[i]);
         }
+
+    }
+    private void fieldFunction(){
 
     }
 
