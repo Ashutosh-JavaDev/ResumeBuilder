@@ -16,6 +16,7 @@ public class Firstpage extends JFrame implements ActionListener {
         setSize(500, 800);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocation(100,400);
         dateEntry();
         setVisible(true);
 
@@ -25,6 +26,7 @@ public class Firstpage extends JFrame implements ActionListener {
         panel=new JPanel();
         panel.setSize(380,780);
         panel.setBackground(Color.black);
+        add(panel);
     }
 
     @Override
