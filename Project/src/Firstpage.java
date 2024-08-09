@@ -35,22 +35,22 @@ public class Firstpage extends JFrame implements ActionListener {
             }
         };
         panel.setSize(590, 790);
-        panel.setLayout(new GridLayout(2,4,25,25));
+        panel.setLayout(new GridLayout(2, 4, 25, 25));
         panel.setBounds(5, 5, 590, 790);
         panel.setOpaque(false); // Allows the transparency effect
         add(panel);
     }
 
     private void PanelFunction() {
-        first=new JLabel("First Name");
-        last=new JLabel("Last Name");
-        link=new JLabel("Links");
-        number=new JLabel("Number");
-        skills=new JLabel("Skills");
-        email=new JLabel("Email ID");
-        about=new JLabel("About");
-        Education=new JLabel("Education");
-        Experience=new JLabel("Experience");
+        first = new JLabel("First Name");
+        last = new JLabel("Last Name");
+        link = new JLabel("Links");
+        number = new JLabel("Number");
+        skills = new JLabel("Skills");
+        email = new JLabel("Email ID");
+        about = new JLabel("About");
+        Education = new JLabel("Education");
+        Experience = new JLabel("Experience");
 
         for (int i = 0; i < 9; i++) {
 
