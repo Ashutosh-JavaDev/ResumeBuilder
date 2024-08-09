@@ -13,7 +13,7 @@ public class Firstpage extends JFrame implements ActionListener {
     JComboBox Skillfield;
     Firstpage() {
         setTitle("Resume Builder");
-        setSize(500, 800);
+        setSize(600, 800);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(100,100);
@@ -32,8 +32,8 @@ public class Firstpage extends JFrame implements ActionListener {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        panel.setSize(490, 790);
-        panel.setBounds(5, 5, 490, 790);
+        panel.setSize(590, 790);
+        panel.setBounds(5, 5, 590, 790);
         panel.setOpaque(false); // Allows the transparency effect
         add(panel);
     }
