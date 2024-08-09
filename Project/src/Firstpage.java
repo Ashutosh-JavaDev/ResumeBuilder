@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.Graphics;
 import java.awt.GridLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -52,30 +53,15 @@ public class Firstpage extends JFrame implements ActionListener {
         about = new JLabel("About");
         Education = new JLabel("Education");
         Experience = new JLabel("Experience");
-        label[0] = first;
-        label[1] = last;
-        label[2] = link;
-        label[3] = number;
-        label[4] = email;
-        label[5] = about;
-        label[6] = skills;
-        label[7] = Education;
-        label[8] = Experience;
+        JLabel[] labels = {first, last, link, number, email, about, skills, Education, Experience};
 
-        for (int i = 0; i < 9; i++) {
-            label[i].setFont(new Font("Segoe UI",Font.BOLD,18));
-            label[i].setForeground(Color.white);
-            label[i].setFocusable(false);
+        for (int i = 0; i < labels.length; i++) {
+            labels[i].setFont(new Font("Segoe UI",Font.BOLD,18));
+            labels[i].setForeground(Color.white);
+            labels[i].setFocusable(false);
+            panel.add(Box.createRigidArea(new Dimension(0, 10)));
+            panel.add(labels[i]);
         }
-        panel.add(label[0]);
-        panel.add(label[1]);
-        panel.add(label[2]);
-        panel.add(label[3]);
-        panel.add(label[4]);
-        panel.add(label[5]);
-        panel.add(label[6]);
-        panel.add(label[7]);
-        panel.add(label[8]);
 
     }
 
