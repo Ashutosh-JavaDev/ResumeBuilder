@@ -4,7 +4,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Firstpage extends JFrame implements ActionListener {
-    JLabel Firstname,Lastname,link,number,email,about,Education,skills,Experience;
+    JLabel label[]=new JLabel[9];
+    //  Firstname,Lastname,link,number,email,about,Education,skills,Experience;
     JTextField Firstfield,Lastfield,linkfield,Numberfield,Aboutfield,Educationfield,Experiencefield;
     JComboBox Skillfield;
     Firstpage() {
