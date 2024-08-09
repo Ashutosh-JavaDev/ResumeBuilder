@@ -1,5 +1,6 @@
 import javax.swing.*;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -21,7 +22,9 @@ public class Firstpage extends JFrame implements ActionListener {
     }
 
     private void dateEntry() {
-        
+        panel=new JPanel();
+        panel.setSize(380,780);
+        panel.setBackground(Color.black);
     }
 
     @Override
