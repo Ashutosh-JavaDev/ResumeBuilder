@@ -17,6 +17,8 @@ public class Firstpage extends JFrame implements ActionListener {
     JPanel panel,panel2,panelnew;
     JTextField Firstfield, Lastfield, linkfield, Numberfield, emailfield, Aboutfield, Educationfield, Experiencefield,
             skillfield;
+            JButton button;
+
 
     Firstpage() {
         setTitle("Resume Builder");
@@ -56,13 +58,13 @@ public class Firstpage extends JFrame implements ActionListener {
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
                 // Set the color with RGB and alpha (for transparency)
-                g.setColor(new Color(0, 204, 204, 50)); // 50 is the alpha value for light opacity
+                g.setColor(new Color(255, 255, 255, 50)); // 50 is the alpha value for light opacity
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        panel.setSize(240, 590);
+        panel.setSize(220, 590);
         panel.setLayout(new GridLayout(9, 1, 10, 10)); // Adjusted layout for 9 labels and 9 text fields
-        panel.setBounds(5, 5, 240, 590);
+        panel.setBounds(5, 5, 220, 590);
         panel.setOpaque(false); // Allows the transparency effect
         panelnew.add(panel,BorderLayout .CENTER);
     }
@@ -73,13 +75,13 @@ public class Firstpage extends JFrame implements ActionListener {
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
                 // Set the color with RGB and alpha (for transparency)
-                g.setColor(new Color(0, 204, 204, 50)); // 50 is the alpha value for light opacity
+                g.setColor(new Color(255, 255, 255, 50)); // 50 is the alpha value for light opacity
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        panel2.setSize(240, 590);
+        panel2.setSize(220, 590);
         panel2.setLayout(new GridLayout(9, 1, 5, 10)); // Adjusted layout for 9 labels and 9 text fields
-        panel2.setBounds(270, 5, 260, 590);
+        panel2.setBounds(270, 5, 240, 590);
         panel2.setOpaque(false); // Allows the transparency effect
         panelnew.add(panel2,BorderLayout.CENTER);
     }
@@ -121,6 +123,11 @@ public class Firstpage extends JFrame implements ActionListener {
             fields[i].setForeground(Color.black);
             panel2.add(fields[i]);
         }
+    }
+    public void ButtonFunction(){
+        button=new JButton();
+        button.setSize(150,200);
+        button.setBounds(480,580,100,20);
     }
 
     @Override
