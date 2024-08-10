@@ -57,7 +57,7 @@ public class Firstpage extends JFrame implements ActionListener {
         };
         panel2.setSize(240, 790);
         panel2.setLayout(new GridLayout(9, 1, 10, 10)); // Adjusted layout for 9 labels and 9 text fields
-        panel2.setBounds(5, 5, 240, 790);
+        panel2.setBounds(5, 5, 260, 790);
         panel2.setOpaque(false); // Allows the transparency effect
         add(panel2);
     }
@@ -97,7 +97,7 @@ public class Firstpage extends JFrame implements ActionListener {
         for (int i = 0; i < fields.length; i++) {
             fields[i].setFont(new Font("Segoe UI", Font.BOLD, 18));
             fields[i].setForeground(Color.black);
-            panel.add(fields[i]);
+            panel2.add(fields[i]);
         }
     }
 
