@@ -76,7 +76,7 @@ public class Firstpage extends JFrame implements ActionListener {
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
                 // Set the color with RGB and alpha (for transparency)
-                g.setColor(new Color(255, 255, 255, 50)); // 50 is the alpha value for light opacity
+                g.setColor(new Color(255, 255, 255, 0)); // 50 is the alpha value for light opacity
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
@@ -128,7 +128,7 @@ public class Firstpage extends JFrame implements ActionListener {
     public void ButtonFunction(){
         button=new JButton("Next");
         button.setSize(15,20);
-        button.setBounds(240,580,100,30);
+        button.setBounds(200,550,100,30);
         button.setBackground(Color.black);
         button.setForeground(Color.white);
         add(button);
