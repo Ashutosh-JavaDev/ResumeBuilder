@@ -11,13 +11,13 @@ public class Firstpage extends JFrame implements ActionListener {
     JLabel label[] = new JLabel[9];
     JLabel first, last, link, number, email, about, Education, skills, Experience;
     JTextField field[] = new JTextField[9];
-    JPanel panel,panel2;
+    JPanel panel,panel2,panelnew;
     JTextField Firstfield, Lastfield, linkfield, Numberfield, emailfield, Aboutfield, Educationfield, Experiencefield,
             skillfield;
 
     Firstpage() {
         setTitle("Resume Builder");
-        setSize(600, 800);
+        setSize(600, 600);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(100, 100);
@@ -38,9 +38,9 @@ public class Firstpage extends JFrame implements ActionListener {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        panel.setSize(240, 790);
+        panel.setSize(240, 590);
         panel.setLayout(new GridLayout(9, 1, 10, 10)); // Adjusted layout for 9 labels and 9 text fields
-        panel.setBounds(5, 5, 240, 790);
+        panel.setBounds(5, 5, 240, 590);
         panel.setOpaque(false); // Allows the transparency effect
         add(panel);
     }
@@ -55,9 +55,9 @@ public class Firstpage extends JFrame implements ActionListener {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        panel2.setSize(240, 790);
-        panel2.setLayout(new GridLayout(9, 1, 10, 10)); // Adjusted layout for 9 labels and 9 text fields
-        panel2.setBounds(5, 5, 260, 790);
+        panel2.setSize(240, 590);
+        panel2.setLayout(new GridLayout(9, 1, 5, 10)); // Adjusted layout for 9 labels and 9 text fields
+        panel2.setBounds(270, 5, 260, 590);
         panel2.setOpaque(false); // Allows the transparency effect
         add(panel2);
     }
