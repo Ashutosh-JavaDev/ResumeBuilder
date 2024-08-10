@@ -43,7 +43,7 @@ public class Firstpage extends JFrame implements ActionListener {
             }
         };
         panelnew.setSize(590, 590);
-        panelnew.setLayout(new BorderLayout()); // Adjusted layout for 9 labels and 9 text fields
+        panelnew.setLayout(new GridLayout(1,2,10,10)); // Adjusted layout for 9 labels and 9 text fields
         panelnew.setBounds(5, 5, 590, 590);
         panelnew.setOpaque(false); // Allows the transparency effect
         add(panelnew);
@@ -81,7 +81,7 @@ public class Firstpage extends JFrame implements ActionListener {
         panel2.setLayout(new GridLayout(9, 1, 5, 10)); // Adjusted layout for 9 labels and 9 text fields
         panel2.setBounds(270, 5, 260, 590);
         panel2.setOpaque(false); // Allows the transparency effect
-        panelnew.add(panel,BorderLayout.CENTER);
+        panelnew.add(panel2,BorderLayout.CENTER);
     }
 
     private void labelFunction() {
