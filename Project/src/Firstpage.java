@@ -21,12 +21,31 @@ public class Firstpage extends JFrame implements ActionListener {
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(100, 100);
+        newPanel();
         LabelPanel();
         FieldPanel();
         labelFunction();
         fieldFunction();
         setVisible(true);
     }
+    // new Panel
+    private void newPanel() {
+        panelnew = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                // Set the color with RGB and alpha (for transparency)
+                g.setColor(new Color(0, 204, 204, 50)); // 50 is the alpha value for light opacity
+                g.fillRect(0, 0, getWidth(), getHeight());
+            }
+        };
+        panel.setSize(240, 790);
+        panel.setLayout(new GridLayout(9, 1, 10, 10)); // Adjusted layout for 9 labels and 9 text fields
+        panel.setBounds(5, 5, 240, 790);
+        panel.setOpaque(false); // Allows the transparency effect
+        add(panel);
+    }
+
     // labelPanel
     private void LabelPanel() {
         panel = new JPanel() {
