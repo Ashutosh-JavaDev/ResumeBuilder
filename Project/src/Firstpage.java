@@ -23,7 +23,7 @@ public class Firstpage extends JFrame implements ActionListener {
         setSize(600, 600);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocation(100, 100);
+        setLocation(200, 100);
         newPanel();
         LabelPanel();
         FieldPanel();
