@@ -29,6 +29,7 @@ public class Firstpage extends JFrame implements ActionListener {
         newPanel();
         LabelPanel();
         FieldPanel();
+        ButtonFunction();
         labelFunction();
         fieldFunction();
         setVisible(true);
@@ -62,9 +63,9 @@ public class Firstpage extends JFrame implements ActionListener {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        panel.setSize(220, 590);
+        panel.setSize(200, 590);
         panel.setLayout(new GridLayout(9, 1, 10, 10)); // Adjusted layout for 9 labels and 9 text fields
-        panel.setBounds(5, 5, 220, 590);
+        panel.setBounds(5, 5, 200, 590);
         panel.setOpaque(false); // Allows the transparency effect
         panelnew.add(panel,BorderLayout .CENTER);
     }
@@ -81,7 +82,7 @@ public class Firstpage extends JFrame implements ActionListener {
         };
         panel2.setSize(220, 590);
         panel2.setLayout(new GridLayout(9, 1, 5, 10)); // Adjusted layout for 9 labels and 9 text fields
-        panel2.setBounds(270, 5, 240, 590);
+        panel2.setBounds(215,5,200, 590);
         panel2.setOpaque(false); // Allows the transparency effect
         panelnew.add(panel2,BorderLayout.CENTER);
     }
@@ -125,9 +126,12 @@ public class Firstpage extends JFrame implements ActionListener {
         }
     }
     public void ButtonFunction(){
-        button=new JButton();
-        button.setSize(150,200);
+        button=new JButton("Next");
+        button.setSize(15,20);
         button.setBounds(480,580,100,20);
+        button.setBackground(Color.black);
+        button.setForeground(Color.white);
+        add(button);
     }
 
     @Override
