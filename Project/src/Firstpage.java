@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.Graphics;
 import java.awt.GridLayout;
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -39,11 +40,11 @@ public class Firstpage extends JFrame implements ActionListener {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        panel.setSize(240, 790);
-        panel.setLayout(new GridLayout(9, 1, 10, 10)); // Adjusted layout for 9 labels and 9 text fields
-        panel.setBounds(5, 5, 240, 790);
-        panel.setOpaque(false); // Allows the transparency effect
-        add(panel);
+        panelnew.setSize(590, 590);
+        panelnew.setLayout(new BorderLayout()); // Adjusted layout for 9 labels and 9 text fields
+        panelnew.setBounds(5, 5, 590, 590);
+        panelnew.setOpaque(false); // Allows the transparency effect
+        add(panelnew,BorderLayout.CENTER);
     }
 
     // labelPanel
