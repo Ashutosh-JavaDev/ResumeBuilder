@@ -21,13 +21,13 @@ public class Firstpage extends JFrame implements ActionListener {
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(100, 100);
-        Panel();
+        LabelPanel();
         labelFunction();
         fieldFunction();
         setVisible(true);
     }
 
-    private void Panel() {
+    private void LabelPanel() {
         panel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
