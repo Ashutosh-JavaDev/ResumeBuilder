@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.border.Border;
+
 import java.awt.Graphics;
 import java.awt.GridLayout;
 import java.awt.BorderLayout;
@@ -79,7 +81,7 @@ public class Firstpage extends JFrame implements ActionListener {
         panel2.setLayout(new GridLayout(9, 1, 5, 10)); // Adjusted layout for 9 labels and 9 text fields
         panel2.setBounds(270, 5, 260, 590);
         panel2.setOpaque(false); // Allows the transparency effect
-        add(panel2);
+        panelnew.add(panel,BorderLayout.CENTER);
     }
 
     private void labelFunction() {
