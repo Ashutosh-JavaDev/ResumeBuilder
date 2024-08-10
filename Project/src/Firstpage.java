@@ -46,7 +46,7 @@ public class Firstpage extends JFrame implements ActionListener {
     }
     // TexTPanel
     private void FieldPanel() {
-        panel = new JPanel() {
+        panel2 = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
@@ -55,11 +55,11 @@ public class Firstpage extends JFrame implements ActionListener {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        panel.setSize(240, 790);
-        panel.setLayout(new GridLayout(9, 1, 10, 10)); // Adjusted layout for 9 labels and 9 text fields
-        panel.setBounds(5, 5, 240, 790);
-        panel.setOpaque(false); // Allows the transparency effect
-        add(panel);
+        panel2.setSize(240, 790);
+        panel2.setLayout(new GridLayout(9, 1, 10, 10)); // Adjusted layout for 9 labels and 9 text fields
+        panel2.setBounds(5, 5, 240, 790);
+        panel2.setOpaque(false); // Allows the transparency effect
+        add(panel2);
     }
 
     private void labelFunction() {
