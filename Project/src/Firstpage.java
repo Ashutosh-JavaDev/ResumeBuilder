@@ -131,6 +131,7 @@ public class Firstpage extends JFrame implements ActionListener {
         button.setBounds(200,550,100,30);
         button.setBackground(Color.black);
         button.setForeground(Color.white);
+        button.addActionListener(this);
         add(button);
     }
 
