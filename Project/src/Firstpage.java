@@ -138,6 +138,9 @@ public class Firstpage extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
         // Handle actions here
+        if(ae.getSource()==button){
+            
+        }
     }
 
     public static void main(String[] args) {
