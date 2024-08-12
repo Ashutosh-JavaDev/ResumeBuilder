@@ -26,7 +26,7 @@ public class Firstpage extends JFrame implements ActionListener {
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(400, 125);
-        // newPanel();
+        newPanel();
         // LabelPanel();
         // FieldPanel();
         // ButtonFunction();
@@ -35,7 +35,9 @@ public class Firstpage extends JFrame implements ActionListener {
         setVisible(true);
     }
     // new Panel
-  
+    public void newPanel(){
+
+    }
     @Override
     public void actionPerformed(ActionEvent ae) {
         // Handle actions here
