@@ -38,8 +38,9 @@ public class Firstpage extends JFrame implements ActionListener {
     public void newPanel() {
         panel = new JPanel() {
             @Override
-            protected void Paintcomponents(Graphics g) {
-
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                
             }
         };
         panel.setSize(990, 590);
