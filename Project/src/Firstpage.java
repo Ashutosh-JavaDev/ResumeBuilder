@@ -14,7 +14,7 @@ public class Firstpage extends JFrame implements ActionListener {
     JLabel label[] = new JLabel[9];
     JLabel first, last, link, number, email, about, Education, skills, Experience;
     JTextField field[] = new JTextField[9];
-    JPanel firstPanel, secondPanel, panelnew;
+    JPanel firstPanel, secondPanel, thirdPanel;
     JTextField Firstfield, Lastfield, linkfield, Numberfield, emailfield, Aboutfield, Educationfield, Experiencefield,
             skillfield;
     JButton button;
@@ -56,19 +56,36 @@ public class Firstpage extends JFrame implements ActionListener {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                g.setColor(new Color(250,14,14, 50));
+                g.setColor(new Color(250,14,14, 100));
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
         secondPanel.setSize(440, 290);
         secondPanel.setLayout(null);
-        secondPanel.setBounds(5, 5, 440, 590);
+        secondPanel.setBounds(5, 5, 440,290);
         secondPanel.setOpaque(false);
         firstPanel.add(secondPanel);
         firstPanel.revalidate();
         firstPanel.repaint();
     }
-
+    // 
+    public void ThirdPanel() {
+        thirdPanel = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                g.setColor(new Color(250,14,14, 100));
+                g.fillRect(0, 0, getWidth(), getHeight());
+            }
+        };
+        secondPanel.setSize(440, 290);
+        secondPanel.setLayout(null);
+        secondPanel.setBounds(5, 5, 440,290);
+        secondPanel.setOpaque(false);
+        firstPanel.add(secondPanel);
+        firstPanel.revalidate();
+        firstPanel.repaint();
+    }
 
     @Override
     public void actionPerformed(ActionEvent ae) {
