@@ -14,7 +14,7 @@ public class Firstpage extends JFrame implements ActionListener {
     JLabel label[] = new JLabel[9];
     JLabel first, last, link, number, email, about, Education, skills, Experience;
     JTextField field[] = new JTextField[9];
-    JPanel panel, panel2, panelnew;
+    JPanel firstPanel, panel2, panelnew;
     JTextField Firstfield, Lastfield, linkfield, Numberfield, emailfield, Aboutfield, Educationfield, Experiencefield,
             skillfield;
     JButton button;
@@ -36,7 +36,7 @@ public class Firstpage extends JFrame implements ActionListener {
 
     // new Panel
     public void newPanel() {
-        panel = new JPanel() {
+        firstPanel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
@@ -44,11 +44,11 @@ public class Firstpage extends JFrame implements ActionListener {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        panel.setSize(990, 590);
-        panel.setLayout(new GridLayout(1, 2, 10, 10));
-        panel.setBounds(5, 5, 990, 590);
-        panel.setOpaque(false);
-        add(panel);
+        firstPanel.setSize(990, 590);
+        firstPanel.setLayout(new GridLayout(2, 2, 10, 10));
+        firstPanel.setBounds(5, 5, 990, 590);
+        firstPanel.setOpaque(false);
+        add(firstPanel);
     }
 
     public void LabelPanel() {
