@@ -26,7 +26,7 @@ public class Firstpage extends JFrame implements ActionListener {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(400, 125);
         newPanel();
-        // LabelPanel();
+        SecondPanel();
         // FieldPanel();
         // ButtonFunction();
         // labelFunction();
