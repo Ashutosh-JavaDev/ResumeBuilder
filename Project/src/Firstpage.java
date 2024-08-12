@@ -80,7 +80,7 @@ public class Firstpage extends JFrame implements ActionListener {
         };
         thirdPanel.setSize(440, 290);
         thirdPanel.setLayout(null);
-        thirdPanel.setBounds(5,295, 440,290);
+        thirdPanel.setBounds(5,300, 440,290);
         thirdPanel.setOpaque(false);
         firstPanel.add(thirdPanel);
         firstPanel.revalidate();
