@@ -14,7 +14,7 @@ public class Firstpage extends JFrame implements ActionListener {
     JLabel label[] = new JLabel[9];
     JLabel first, last, link, number, email, about, Education, skills, Experience;
     JTextField field[] = new JTextField[9];
-    JPanel firstPanel, secondPanel, thirdPanel;
+    JPanel firstPanel, secondPanel, thirdPanel,forthPanel;
     JTextField Firstfield, Lastfield, linkfield, Numberfield, emailfield, Aboutfield, Educationfield, Experiencefield,
             skillfield;
     JButton button;
@@ -71,6 +71,24 @@ public class Firstpage extends JFrame implements ActionListener {
     // 
     public void ThirdPanel() {
         thirdPanel = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                g.setColor(new Color(250,14,14, 100));
+                g.fillRect(0, 0, getWidth(), getHeight());
+            }
+        };
+        thirdPanel.setSize(440, 290);
+        thirdPanel.setLayout(null);
+        thirdPanel.setBounds(5,300, 440,290);
+        thirdPanel.setOpaque(false);
+        firstPanel.add(thirdPanel);
+        firstPanel.revalidate();
+        firstPanel.repaint();
+    }
+    // 
+    public void Fourthpanel() {
+        forthPanel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
