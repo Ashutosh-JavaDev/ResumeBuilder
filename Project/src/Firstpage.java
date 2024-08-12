@@ -22,7 +22,7 @@ public class Firstpage extends JFrame implements ActionListener {
 
     Firstpage() {
         setTitle("Resume Builder");
-        setSize(600, 600);
+        setSize(1000, 600);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(300, 125);
