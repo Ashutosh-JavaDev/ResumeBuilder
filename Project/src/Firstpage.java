@@ -44,7 +44,7 @@ public class Firstpage extends JFrame implements ActionListener {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        // panel.setSize(990, 590);
+        panel.setSize(990, 590);
         panel.setLayout(new GridLayout(1, 2,10,10));
         panel.setBounds(5, 5, 995, 595);
         panel.setOpaque(false);
