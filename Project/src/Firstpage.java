@@ -27,7 +27,7 @@ public class Firstpage extends JFrame implements ActionListener {
         setLocation(400, 125);
         newPanel();
         SecondPanel();
-        // FieldPanel();
+        ThirdPanel();
         // ButtonFunction();
         // labelFunction();
         // fieldFunction();
