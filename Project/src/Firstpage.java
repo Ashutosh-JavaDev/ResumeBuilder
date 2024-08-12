@@ -96,11 +96,11 @@ public class Firstpage extends JFrame implements ActionListener {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        thirdPanel.setSize(440, 290);
-        thirdPanel.setLayout(null);
-        thirdPanel.setBounds(5,300, 440,290);
-        thirdPanel.setOpaque(false);
-        firstPanel.add(thirdPanel);
+        forthPanel.setSize(550,590);
+        forthPanel.setLayout(null);
+        forthPanel.setBounds(460,5,440,590);
+        forthPanel.setOpaque(false);
+        firstPanel.add(forthPanel);
         firstPanel.revalidate();
         firstPanel.repaint();
     }
