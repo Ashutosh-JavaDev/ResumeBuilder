@@ -56,7 +56,7 @@ public class Firstpage extends JFrame implements ActionListener {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                g.setColor(new Color(0, 100, 100, 50));
+                g.setColor(new Color(255, 255, 255, 50));
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
