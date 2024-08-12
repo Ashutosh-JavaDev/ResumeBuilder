@@ -50,7 +50,9 @@ public class Firstpage extends JFrame implements ActionListener {
         panel.setOpaque(false);
         add(panel);
     }
-
+    public void LabelPanel(){
+        
+    }
     @Override
     public void actionPerformed(ActionEvent ae) {
         // Handle actions here
