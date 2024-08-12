@@ -45,14 +45,16 @@ public class Firstpage extends JFrame implements ActionListener {
             }
         };
         panel.setSize(990, 590);
-        panel.setLayout(new GridLayout(1, 2,10,10));
+        panel.setLayout(new GridLayout(1, 2, 10, 10));
         panel.setBounds(5, 5, 990, 590);
         panel.setOpaque(false);
         add(panel);
     }
-    public void LabelPanel(){
-        
+
+    public void LabelPanel() {
+
     }
+
     @Override
     public void actionPerformed(ActionEvent ae) {
         // Handle actions here
