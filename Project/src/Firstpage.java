@@ -37,6 +37,7 @@ public class Firstpage extends JFrame implements ActionListener {
     // new Panel
     public void newPanel(){
         panel=new JPanel();
+        
     }
     @Override
     public void actionPerformed(ActionEvent ae) {
