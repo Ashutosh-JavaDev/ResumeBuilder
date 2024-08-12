@@ -38,6 +38,8 @@ public class Firstpage extends JFrame implements ActionListener {
     public void newPanel(){
         panel=new JPanel();
         panel.setSize(990,590);
+        panel.setBounds(5,5,995,595);
+        add(panel);
     }
     @Override
     public void actionPerformed(ActionEvent ae) {
