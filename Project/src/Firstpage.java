@@ -14,11 +14,10 @@ public class Firstpage extends JFrame implements ActionListener {
     JLabel label[] = new JLabel[9];
     JLabel first, last, link, number, email, about, Education, skills, Experience;
     JTextField field[] = new JTextField[9];
-    JPanel panel,panel2,panelnew;
+    JPanel panel, panel2, panelnew;
     JTextField Firstfield, Lastfield, linkfield, Numberfield, emailfield, Aboutfield, Educationfield, Experiencefield,
             skillfield;
-            JButton button;
-
+    JButton button;
 
     Firstpage() {
         setTitle("Resume Builder");
@@ -34,18 +33,25 @@ public class Firstpage extends JFrame implements ActionListener {
         // fieldFunction();
         setVisible(true);
     }
+
     // new Panel
-    public void newPanel(){
-        panel=new JPanel();
-        panel.setSize(990,590);
-        panel.setBounds(5,5,995,595);
+    public void newPanel() {
+        panel = new JPanel() {
+            @Override
+            protected void Paintcomponents(Graphics g) {
+
+            }
+        };
+        panel.setSize(990, 590);
+        panel.setBounds(5, 5, 995, 595);
         add(panel);
     }
+
     @Override
     public void actionPerformed(ActionEvent ae) {
         // Handle actions here
-        if(ae.getSource()==button){
-            
+        if (ae.getSource() == button) {
+
         }
     }
 
