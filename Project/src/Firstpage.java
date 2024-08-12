@@ -45,15 +45,28 @@ public class Firstpage extends JFrame implements ActionListener {
             }
         };
         firstPanel.setSize(990, 590);
-        firstPanel.setLayout(new GridLayout(2, 2, 10, 10));
+        firstPanel.setLayout(new GridLayout(1, 2, 10, 10));
         firstPanel.setBounds(5, 5, 990, 590);
         firstPanel.setOpaque(false);
         add(firstPanel);
     }
 
     public void SecondPanel() {
-        
+        secondPanel = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                g.setColor(new Color(0, 0, 0, 50));
+                g.fillRect(0, 0, getWidth(), getHeight());
+            }
+        };
+        secondPanel.setSize(440, 290);
+        secondPanel.setLayout(new GridLayout(2, 1, 10, 10));
+        secondPanel.setBounds(5, 5, 440, 590);
+        secondPanel.setOpaque(false);
+        firstPanel.add(secondPanel);
     }
+
 
     @Override
     public void actionPerformed(ActionEvent ae) {
