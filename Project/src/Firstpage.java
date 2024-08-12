@@ -65,6 +65,8 @@ public class Firstpage extends JFrame implements ActionListener {
         secondPanel.setBounds(5, 5, 440, 590);
         secondPanel.setOpaque(false);
         firstPanel.add(secondPanel);
+        firstPanel.revalidate();
+        firstPanel.repaint();
     }
 
 
