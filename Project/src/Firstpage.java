@@ -14,7 +14,7 @@ public class Firstpage extends JFrame implements ActionListener {
     JLabel label[] = new JLabel[9];
     JLabel first, last, link, number, email, about, Education, skills, Experience;
     JTextField field[] = new JTextField[9];
-    JPanel firstPanel, panel2, panelnew;
+    JPanel firstPanel, secondPanel, panelnew;
     JTextField Firstfield, Lastfield, linkfield, Numberfield, emailfield, Aboutfield, Educationfield, Experiencefield,
             skillfield;
     JButton button;
@@ -51,8 +51,8 @@ public class Firstpage extends JFrame implements ActionListener {
         add(firstPanel);
     }
 
-    public void LabelPanel() {
-
+    public void SecondPanel() {
+        
     }
 
     @Override
