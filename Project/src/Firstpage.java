@@ -25,7 +25,7 @@ public class Firstpage extends JFrame implements ActionListener {
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(400, 125);
-        newPanel();
+        new MainPanel();
         SecondPanel();
         ThirdPanel();
         Fourthpanel();
@@ -35,21 +35,6 @@ public class Firstpage extends JFrame implements ActionListener {
     }
 
     // new Panel
-    public void newPanel() {
-        firstPanel = new JPanel() {
-            @Override
-            protected void paintComponent(Graphics g) {
-                super.paintComponent(g);
-                g.setColor(new Color(0, 204, 204, 50));
-                g.fillRect(0, 0, getWidth(), getHeight());
-            }
-        };
-        firstPanel.setSize(990, 590);
-        firstPanel.setLayout(null);
-        firstPanel.setBounds(5, 5, 990, 590);
-        firstPanel.setOpaque(false);
-        add(firstPanel);
-    }
 
     public void SecondPanel() {
         secondPanel = new JPanel() {
