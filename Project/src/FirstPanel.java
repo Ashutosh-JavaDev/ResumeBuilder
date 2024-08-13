@@ -22,10 +22,8 @@ public class FirstPanel extends JFrame {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        TitledBorder titledBorder = BorderFactory.createTitledBorder("Personal Information");
-        LineBorder lineBorder = new LineBorder(Color.black, 2);
-        CompoundBorder compund = BorderFactory.createCompoundBorder(lineBorder, titledBorder);
-        secondPanel.setBorder(compund);
+        
+        secondPanel.setBorder(BorderFactory.createTitledBorder("Personal Information"));
         secondPanel.setSize(440, 270);
         secondPanel.setLayout(null);
         secondPanel.setBounds(5, 5, 440, 270);
