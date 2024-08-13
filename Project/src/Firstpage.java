@@ -9,7 +9,7 @@ public class Firstpage extends JFrame implements ActionListener {
     JLabel label[] = new JLabel[9];
     JLabel first, last, link, number, email, about, Education, skills, Experience;
     JTextField field[] = new JTextField[9];
-    JPanel firstPanel, secondPanel, thirdPanel,forthPanel;
+    JPanel firstPanel, secondPanel, thirdPanel, forthPanel;
     JTextField Firstfield, Lastfield, linkfield, Numberfield, emailfield, Aboutfield, Educationfield, Experiencefield,
             skillfield;
     JButton button;
@@ -25,8 +25,7 @@ public class Firstpage extends JFrame implements ActionListener {
         setVisible(true);
     }
 
-    // 
-
+    //
 
     @Override
     public void actionPerformed(ActionEvent ae) {
@@ -39,7 +38,7 @@ public class Firstpage extends JFrame implements ActionListener {
     public static void main(String[] args) {
         new Firstpage();
         new MainPanel();
-        MainPanel mainPanel=new MainPanel();
+        MainPanel mainPanel = new MainPanel();
         new FirstPanel(mainPanel);
         new SecondPanel(mainPanel);
         new ThirdPanel(mainPanel);
