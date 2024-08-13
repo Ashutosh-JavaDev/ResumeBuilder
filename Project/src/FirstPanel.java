@@ -7,9 +7,8 @@ public class FirstPanel extends JFrame {
 
     JPanel firstPanel, secondPanel;
 
-    public void SecondPanel() {
-        new MainPanel();
-        // this.firstPanel = firstPanel;
+    public FirstPanel(MainPanel mainPanel) {
+        this.firstPanel=mainPanel.getFirstPanel();
         secondPanel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {

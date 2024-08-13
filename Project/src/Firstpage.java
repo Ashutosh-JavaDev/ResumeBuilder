@@ -26,7 +26,8 @@ public class Firstpage extends JFrame implements ActionListener {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(400, 125);
         new MainPanel();
-        new FirstPanel();
+        MainPanel mainPanel=new MainPanel();
+        new FirstPanel(mainPanel);
         ThirdPanel();
         Fourthpanel();
         // labelFunction();
@@ -36,24 +37,24 @@ public class Firstpage extends JFrame implements ActionListener {
 
     // new Panel
 
-    public void SecondPanel() {
-        secondPanel = new JPanel() {
-            @Override
-            protected void paintComponent(Graphics g) {
-                super.paintComponent(g);
-                g.setColor(new Color(250,14,14, 100));
-                g.fillRect(0, 0, getWidth(), getHeight());
-            }
-        };
-        secondPanel.setSize(440, 270);
-        secondPanel.setLayout(null);
-        secondPanel.setBounds(5, 5, 440,270);
-        secondPanel.setOpaque(false);
-        firstPanel.add(secondPanel);
-        firstPanel.revalidate();
-        firstPanel.repaint();
-    }
-    // 
+    // public void SecondPanel() {
+    //     secondPanel = new JPanel() {
+    //         @Override
+    //         protected void paintComponent(Graphics g) {
+    //             super.paintComponent(g);
+    //             g.setColor(new Color(250,14,14, 100));
+    //             g.fillRect(0, 0, getWidth(), getHeight());
+    //         }
+    //     };
+    //     secondPanel.setSize(440, 270);
+    //     secondPanel.setLayout(null);
+    //     secondPanel.setBounds(5, 5, 440,270);
+    //     secondPanel.setOpaque(false);
+    //     firstPanel.add(secondPanel);
+    //     firstPanel.revalidate();
+    //     firstPanel.repaint();
+    // }
+    // // 
     public void ThirdPanel() {
         thirdPanel = new JPanel() {
             @Override
