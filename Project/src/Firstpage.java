@@ -12,6 +12,7 @@ public class Firstpage extends JFrame implements ActionListener {
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(400, 125);
+        add(mainPanel.getFirstPanel());
         new MainPanel();
         new FirstPanel(mainPanel);
         new SecondPanel(mainPanel);
