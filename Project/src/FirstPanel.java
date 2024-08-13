@@ -1,3 +1,4 @@
+import javax.sound.sampled.Line;
 import javax.swing.BorderFactory;
 import javax.swing.border.TitledBorder;
 import javax.swing.border.LineBorder;
@@ -12,7 +13,7 @@ public class FirstPanel extends JFrame {
     JPanel firstPanel, secondPanel;
 
     public FirstPanel(MainPanel mainPanel) {
-        this.firstPanel=mainPanel.getFirstPanel();
+        this.firstPanel = mainPanel.getFirstPanel();
         secondPanel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
@@ -21,7 +22,8 @@ public class FirstPanel extends JFrame {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        secondPanel.setBorder(BorderFactory.createEtchedBorder()); 
+        TitledBorder titledBorder = BorderFactory.createTitledBorder("Personal Information");
+        LineBorder lineBorder = new LineBorder(Color.black, 2);
 
         secondPanel.setSize(440, 270);
         secondPanel.setLayout(null);
@@ -31,7 +33,8 @@ public class FirstPanel extends JFrame {
         firstPanel.revalidate();
         firstPanel.repaint();
     }
-    public void personalInformation(){
+
+    public void personalInformation() {
 
     }
 }
