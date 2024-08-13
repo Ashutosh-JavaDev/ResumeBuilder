@@ -80,7 +80,7 @@ public class Firstpage extends JFrame implements ActionListener {
         };
         thirdPanel.setSize(440, 270);
         thirdPanel.setLayout(null);
-        thirdPanel.setBounds(5,300, 440,265);
+        thirdPanel.setBounds(5,300, 420,265);
         thirdPanel.setOpaque(false);
         firstPanel.add(thirdPanel);
         firstPanel.revalidate();
@@ -98,7 +98,7 @@ public class Firstpage extends JFrame implements ActionListener {
         };
         forthPanel.setSize(550,570);
         forthPanel.setLayout(null);
-        forthPanel.setBounds(450,5,535,560);
+        forthPanel.setBounds(450,5,535,540);
         forthPanel.setOpaque(false);
         firstPanel.add(forthPanel);
         firstPanel.revalidate();
