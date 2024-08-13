@@ -18,6 +18,8 @@ public class FirstPanel extends JFrame {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
+        secondPanel.setBorder(BorderFactory.createEtchedBorder()); 
+
         secondPanel.setSize(440, 270);
         secondPanel.setLayout(null);
         secondPanel.setBounds(5, 5, 440, 270);
