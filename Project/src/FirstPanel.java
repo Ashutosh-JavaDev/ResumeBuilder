@@ -9,7 +9,7 @@ public class FirstPanel extends JFrame {
 
     public void SecondPanel() {
         new MainPanel();
-
+this.firstPanel=firstPanel;
         secondPanel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
