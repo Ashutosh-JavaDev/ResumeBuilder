@@ -1,4 +1,7 @@
 import javax.swing.BorderFactory;
+import javax.swing.border.TitledBorder;
+import javax.swing.border.LineBorder;
+import javax.swing.border.CompoundBorder;
 import javax.swing.JPanel;
 import javax.swing.JFrame;
 import java.awt.Graphics;
