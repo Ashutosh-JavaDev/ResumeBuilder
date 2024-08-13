@@ -3,12 +3,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Firstpage extends JFrame implements ActionListener {
-    JLabel label[] = new JLabel[9];
-    JLabel first, last, link, number, email, about, Education, skills, Experience;
-    JTextField field[] = new JTextField[9];
-    JPanel firstPanel, secondPanel, thirdPanel, forthPanel;
-    JTextField Firstfield, Lastfield, linkfield, Numberfield, emailfield, Aboutfield, Educationfield, Experiencefield,
-            skillfield;
     JButton button;
 
     Firstpage() {
