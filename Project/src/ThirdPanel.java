@@ -2,8 +2,9 @@ import javax.swing.JPanel;
 import javax.swing.JFrame;
 import java.awt.Color;
 import java.awt.Graphics;
-public class ThirdPanel {
-        public void Fourthpanel() {
+public class ThirdPanel extends JFrame {
+    JPanel forthPanel,firJPanel;
+        public ThirdPanel(MainPanel mainPanel) {
         forthPanel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
