@@ -1,3 +1,4 @@
+import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JFrame;
 import java.awt.Graphics;
@@ -26,6 +27,6 @@ public class FirstPanel extends JFrame {
         firstPanel.repaint();
     }
     public void personalInformation(){
-        
+
     }
 }
