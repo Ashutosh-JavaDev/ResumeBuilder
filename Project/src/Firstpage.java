@@ -60,9 +60,9 @@ public class Firstpage extends JFrame implements ActionListener {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        secondPanel.setSize(440, 290);
+        secondPanel.setSize(440, 270);
         secondPanel.setLayout(null);
-        secondPanel.setBounds(5, 5, 440,290);
+        secondPanel.setBounds(5, 5, 440,270);
         secondPanel.setOpaque(false);
         firstPanel.add(secondPanel);
         firstPanel.revalidate();
@@ -78,9 +78,9 @@ public class Firstpage extends JFrame implements ActionListener {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        thirdPanel.setSize(440, 290);
+        thirdPanel.setSize(440, 270);
         thirdPanel.setLayout(null);
-        thirdPanel.setBounds(5,300, 440,285);
+        thirdPanel.setBounds(5,300, 440,265);
         thirdPanel.setOpaque(false);
         firstPanel.add(thirdPanel);
         firstPanel.revalidate();
@@ -96,9 +96,9 @@ public class Firstpage extends JFrame implements ActionListener {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        forthPanel.setSize(550,590);
+        forthPanel.setSize(550,570);
         forthPanel.setLayout(null);
-        forthPanel.setBounds(450,5,535,580);
+        forthPanel.setBounds(450,5,535,560);
         forthPanel.setOpaque(false);
         firstPanel.add(forthPanel);
         firstPanel.revalidate();
