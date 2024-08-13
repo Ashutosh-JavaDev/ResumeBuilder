@@ -1,6 +1,9 @@
 import javax.swing.JPanel;
 import javax.swing.JFrame;
+import java.awt.Graphics;
+import java.awt.Color;
 public class FirstPanel extends JFrame{
+    JPanel secondPanel;
         public void SecondPanel() {
         secondPanel = new JPanel() {
             @Override
