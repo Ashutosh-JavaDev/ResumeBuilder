@@ -1,5 +1,7 @@
 import javax.swing.JPanel;
-
+import javax.swing.JFrame;
+import java.awt.Color;
+import java.awt.Graphics;
 public class ThirdPanel {
         public void Fourthpanel() {
         forthPanel = new JPanel() {
