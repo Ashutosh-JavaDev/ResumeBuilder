@@ -5,11 +5,11 @@ import java.awt.Color;
 
 public class FirstPanel extends JFrame {
 
-    JPanel firstPanel,secondPanel;
+    JPanel firstPanel, secondPanel;
 
     public void SecondPanel() {
         new MainPanel();
-this.firstPanel=firstPanel;
+        this.firstPanel = firstPanel;
         secondPanel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
