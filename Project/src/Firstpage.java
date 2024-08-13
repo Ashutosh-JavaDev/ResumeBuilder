@@ -26,13 +26,8 @@ public class Firstpage extends JFrame implements ActionListener {
         new FirstPanel(mainPanel);
         new SecondPanel(mainPanel);
         new ThirdPanel(mainPanel);
-        // labelFunction();
-        // fieldFunction();
         setVisible(true);
     }
-
-    //
-
     @Override
     public void actionPerformed(ActionEvent ae) {
         // Handle actions here
