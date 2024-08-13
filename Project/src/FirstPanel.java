@@ -25,4 +25,7 @@ public class FirstPanel extends JFrame {
         firstPanel.revalidate();
         firstPanel.repaint();
     }
+    public void personalInformation(){
+        
+    }
 }
