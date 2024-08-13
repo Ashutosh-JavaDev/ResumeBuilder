@@ -24,7 +24,7 @@ public class FirstPanel extends JFrame {
         };
         TitledBorder titledBorder = BorderFactory.createTitledBorder("Personal Information");
         LineBorder lineBorder = new LineBorder(Color.black, 2);
-        CompoundBorder compund=BorderFactory.createCompoundBorder(lineBorder, titledBorder);
+        CompoundBorder compund = BorderFactory.createCompoundBorder(lineBorder, titledBorder);
         secondPanel.setBorder(compund);
         secondPanel.setSize(440, 270);
         secondPanel.setLayout(null);
