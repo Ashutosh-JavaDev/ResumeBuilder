@@ -20,9 +20,7 @@ public class Firstpage extends JFrame implements ActionListener {
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(400, 125);
-        new MainPanel();
-        MainPanel mainPanel=new MainPanel();
-        new FirstPanel(mainPanel);
+      
         ThirdPanel();
         Fourthpanel();
         // labelFunction();
@@ -75,5 +73,8 @@ public class Firstpage extends JFrame implements ActionListener {
 
     public static void main(String[] args) {
         new Firstpage();
+        new MainPanel();
+        MainPanel mainPanel=new MainPanel();
+        new FirstPanel(mainPanel);
     }
 }
