@@ -4,9 +4,10 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 public class SecondPanel extends JFrame {
-    JPanel thirdPanel;
+    JPanel firstPanel,thirdPanel;
 
-    public void ThirdPanel() {
+    public SecondPanel(MainPanel mainPanel) {
+        this.firstPanel=mainPanel.getFirstPanel();
         thirdPanel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
