@@ -3,6 +3,7 @@ import javax.swing.JFrame;
 import java.awt.Color;
 import java.awt.Graphics;
 public class MainPanel extends JFrame {
+    
     JPanel firstPanel;
        public void newPanel() {
         firstPanel = new JPanel() {
