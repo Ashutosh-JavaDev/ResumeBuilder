@@ -6,13 +6,12 @@ public class Firstpage extends JFrame implements ActionListener {
     JButton button;
 
     Firstpage() {
+        MainPanel mainPanel = new MainPanel();
         setTitle("Resume Builder");
         setSize(1000, 600);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(400, 125);
-
-        MainPanel mainPanel = new MainPanel();
         new MainPanel();
         new FirstPanel(mainPanel);
         new SecondPanel(mainPanel);
