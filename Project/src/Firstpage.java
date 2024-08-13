@@ -1,12 +1,7 @@
 import javax.swing.*;
-import javax.swing.border.Border;
-
+// import javax.swing.border.Border;
 import java.awt.Graphics;
-import java.awt.GridLayout;
-import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -34,27 +29,6 @@ public class Firstpage extends JFrame implements ActionListener {
         // fieldFunction();
         setVisible(true);
     }
-
-    // new Panel
-
-    // public void SecondPanel() {
-    //     secondPanel = new JPanel() {
-    //         @Override
-    //         protected void paintComponent(Graphics g) {
-    //             super.paintComponent(g);
-    //             g.setColor(new Color(250,14,14, 100));
-    //             g.fillRect(0, 0, getWidth(), getHeight());
-    //         }
-    //     };
-    //     secondPanel.setSize(440, 270);
-    //     secondPanel.setLayout(null);
-    //     secondPanel.setBounds(5, 5, 440,270);
-    //     secondPanel.setOpaque(false);
-    //     firstPanel.add(secondPanel);
-    //     firstPanel.revalidate();
-    //     firstPanel.repaint();
-    // }
-    // // 
     public void ThirdPanel() {
         thirdPanel = new JPanel() {
             @Override
