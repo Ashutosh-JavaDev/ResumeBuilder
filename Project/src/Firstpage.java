@@ -36,9 +36,9 @@ public class Firstpage extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
+        MainPanel mainPanel = new MainPanel();
         new Firstpage();
         new MainPanel();
-        MainPanel mainPanel = new MainPanel();
         new FirstPanel(mainPanel);
         new SecondPanel(mainPanel);
         new ThirdPanel(mainPanel);
