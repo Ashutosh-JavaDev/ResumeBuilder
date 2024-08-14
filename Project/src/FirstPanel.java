@@ -42,7 +42,6 @@ public class FirstPanel extends JFrame {
         for (int i = 0; i < labelNames.length; i++) {
             label[i] = new JLabel(labelNames[i]);
             label[i].setFont(font);
-            // label[i].setForeground(C);
             secondPanel.add(label[i]);
             
         }
