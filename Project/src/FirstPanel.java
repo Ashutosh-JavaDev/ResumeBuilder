@@ -12,7 +12,7 @@ public class FirstPanel extends JFrame {
     JLabel[] label = new JLabel[5];
     JTextField[] field = new JTextField[5];
     JTextField firstField, lastField, countryField, cityField, linkedField;
-    Font font=new Font("Lobster",Font.BOLD,20);
+    Font font=new Font("Raleway",Font.BOLD,18);
     JPanel firstPanel, secondPanel;
 
     public FirstPanel(MainPanel mainPanel) {
@@ -42,6 +42,7 @@ public class FirstPanel extends JFrame {
         for (int i = 0; i < labelNames.length; i++) {
             label[i] = new JLabel(labelNames[i]);
             label[i].setFont(font);
+            label[i].setForeground(Color.white);
             secondPanel.add(label[i]);
             
         }
