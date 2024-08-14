@@ -7,8 +7,8 @@ import java.awt.Graphics;
 import java.awt.Color;
 
 public class FirstPanel extends JFrame {
+    String[] labelNames = { "First Name", "Last Name", "Country", "City", "Linked IN" };
     JLabel[] label = new JLabel[5];
-    JLabel firstName, lastName, Country, city, linkedIN;
     JTextField[] field = new JTextField[5];
     JTextField firstField, lastField, countryField, cityField, linkedField;
     JPanel firstPanel, secondPanel;
@@ -37,7 +37,6 @@ public class FirstPanel extends JFrame {
     }
 
     public void information() {
-       
 
     }
 }
