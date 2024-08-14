@@ -38,6 +38,9 @@ public class FirstPanel extends JFrame {
     public void information(){
         firstName=new JLabel("First Name");
         firstName=new JLabel("First Name");
+        firstName=new JLabel("First Name");
+        firstName=new JLabel("First Name");
+        firstName=new JLabel("First Name");
     }
 
     public void personalInformation() {
