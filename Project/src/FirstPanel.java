@@ -12,7 +12,7 @@ public class FirstPanel extends JFrame {
     JLabel[] label = new JLabel[5];
     JTextField[] field = new JTextField[5];
     JTextField firstField, lastField, countryField, cityField, linkedField;
-    Font font=new Font("Raleway",Font.BOLD,16);
+    Font font = new Font("Raleway", Font.BOLD, 16);
     JPanel firstPanel, secondPanel;
 
     public FirstPanel(MainPanel mainPanel) {
@@ -21,7 +21,7 @@ public class FirstPanel extends JFrame {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                g.setColor(new Color(128,128,128,75));
+                g.setColor(new Color(128, 128, 128, 75));
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
@@ -29,7 +29,7 @@ public class FirstPanel extends JFrame {
         secondPanel.setBorder(BorderFactory.createTitledBorder("Personal Information"));
         secondPanel.setSize(440, 270);
         secondPanel.setLayout(null);
-        secondPanel.setLayout(new GridLayout(3, 2,10,2));
+        secondPanel.setLayout(new GridLayout(3, 2, 10, 2));
         secondPanel.setBounds(5, 5, 440, 270);
         secondPanel.setOpaque(false);
         firstPanel.add(secondPanel);
@@ -43,7 +43,7 @@ public class FirstPanel extends JFrame {
             label[i] = new JLabel(labelNames[i]);
             label[i].setFont(font);
             secondPanel.add(label[i]);
-            
+
         }
     }
 }
