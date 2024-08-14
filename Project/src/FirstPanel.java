@@ -37,6 +37,9 @@ public class FirstPanel extends JFrame {
     }
 
     public void information() {
-
+        for(int i=0;i<labelNames.length;i++){
+            label[i]=new JLabel(labelNames[i]);
+            secondPanel.add(label[i]);
+        }
     }
 }
