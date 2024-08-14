@@ -1,5 +1,4 @@
 import javax.swing.*;
-import javax.sound.sampled.Line;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JFrame;
