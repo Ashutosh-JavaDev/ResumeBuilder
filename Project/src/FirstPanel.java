@@ -8,6 +8,7 @@ import java.awt.Color;
 
 public class FirstPanel extends JFrame {
     JLabel firstName,lastName,Country,city,linkedIN;
+    JTextField firstField,lastField,countryField,cityField,linkedField;
     JPanel firstPanel, secondPanel;
 
     public FirstPanel(MainPanel mainPanel) {
