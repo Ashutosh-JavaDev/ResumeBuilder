@@ -1,15 +1,13 @@
+import javax.swing.*;
 import javax.sound.sampled.Line;
 import javax.swing.BorderFactory;
-import javax.swing.border.TitledBorder;
-import javax.swing.border.LineBorder;
-import javax.swing.border.CompoundBorder;
 import javax.swing.JPanel;
 import javax.swing.JFrame;
 import java.awt.Graphics;
 import java.awt.Color;
 
 public class FirstPanel extends JFrame {
-
+    JLabel firstName,lastName,Country,city,linkedIN;
     JPanel firstPanel, secondPanel;
 
     public FirstPanel(MainPanel mainPanel) {
