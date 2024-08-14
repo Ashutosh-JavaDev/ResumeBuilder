@@ -1,5 +1,5 @@
 import javax.swing.*;
-import java.awt.GridLayout; 
+import java.awt.GridLayout;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JFrame;
@@ -7,10 +7,10 @@ import java.awt.Graphics;
 import java.awt.Color;
 
 public class FirstPanel extends JFrame {
-    JLabel[]label=new JLabel[5];
-    JLabel firstName,lastName,Country,city,linkedIN;
-    JTextField[]field=new JTextField[5];
-    JTextField firstField,lastField,countryField,cityField,linkedField;
+    JLabel[] label = new JLabel[5];
+    JLabel firstName, lastName, Country, city, linkedIN;
+    JTextField[] field = new JTextField[5];
+    JTextField firstField, lastField, countryField, cityField, linkedField;
     JPanel firstPanel, secondPanel;
 
     public FirstPanel(MainPanel mainPanel) {
@@ -23,11 +23,11 @@ public class FirstPanel extends JFrame {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         };
-        
+
         secondPanel.setBorder(BorderFactory.createTitledBorder("Personal Information"));
         secondPanel.setSize(440, 270);
         secondPanel.setLayout(null);
-        secondPanel.setLayout(new GridLayout(3,2,25,10));
+        secondPanel.setLayout(new GridLayout(3, 2, 25, 10));
         secondPanel.setBounds(5, 5, 440, 270);
         secondPanel.setOpaque(false);
         firstPanel.add(secondPanel);
@@ -35,12 +35,13 @@ public class FirstPanel extends JFrame {
         firstPanel.repaint();
         information();
     }
-    public void information(){
-        firstName=new JLabel("First Name");
-        lastName=new JLabel("Last Name");
-        Country=new JLabel("Country");
-        city=new JLabel("City");
-        linkedIN=new JLabel("LinkedIN");
+
+    public void information() {
+        firstName = new JLabel("First Name");
+        lastName = new JLabel("Last Name");
+        Country = new JLabel("Country");
+        city = new JLabel("City");
+        linkedIN = new JLabel("LinkedIN");
     }
 
     public void personalInformation() {
