@@ -1,5 +1,5 @@
 import javax.swing.*;
-import java.awt.GridLayout;
+import java.awt.GridBagLayout;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JFrame;
@@ -29,7 +29,7 @@ public class FirstPanel extends JFrame {
         secondPanel.setBorder(BorderFactory.createTitledBorder("Personal Information"));
         secondPanel.setSize(440, 270);
         secondPanel.setLayout(null);
-        secondPanel.setLayout(new GridLayout(3, 2, 10, 2));
+        secondPanel.setLayout(new GridBagLayout());
         secondPanel.setBounds(5, 5, 440, 270);
         secondPanel.setOpaque(false);
         firstPanel.add(secondPanel);
