@@ -31,9 +31,10 @@ public class FirstPanel extends JFrame {
         firstPanel.add(secondPanel);
         firstPanel.revalidate();
         firstPanel.repaint();
+        information();
     }
     public void information(){
-        
+
     }
 
     public void personalInformation() {
