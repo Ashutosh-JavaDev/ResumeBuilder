@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.GridBagLayout;
+import java.awt.Insets;
 import java.awt.Graphics;
+import java.awt.GridBagConstraints;
 import java.awt.Font;
 import java.awt.Color;
 
@@ -36,21 +38,21 @@ public class FirstPanel extends JFrame {
     }
 
     public void information() {
-           GridBagConstraints gbc = new GridBagConstraints();
+        GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(5, 5, 5, 5); // Add some spacing
         gbc.fill = GridBagConstraints.HORIZONTAL; // Make components fill horizontally
-        
+
         for (int i = 0; i < labelNames.length; i++) {
             label[i] = new JLabel(labelNames[i]);
             label[i].setFont(font);
             gbc.gridx = 0; // First column
             gbc.gridy = i; // Row i
             secondPanel.add(label[i], gbc);
-            
+
             field[i] = new JTextField(15); // Create the text field
             gbc.gridx = 1; // Second column
             secondPanel.add(field[i], gbc);
         }
     }
-    }
+
 }
