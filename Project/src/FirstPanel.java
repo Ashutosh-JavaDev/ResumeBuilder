@@ -39,7 +39,7 @@ public class FirstPanel extends JFrame {
 
     public void information() {
         GridBagConstraints gbc = new GridBagConstraints();
-        gbc.insets = new Insets(3, 2, 5, 5); // Add some spacing
+        gbc.insets = new Insets(5, 5, 5, 10); // Add some spacing
         gbc.fill = GridBagConstraints.VERTICAL; // Make components fill horizontally
 
         for (int i = 0; i < labelNames.length; i++) {
