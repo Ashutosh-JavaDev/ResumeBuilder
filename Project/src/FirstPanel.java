@@ -45,12 +45,14 @@ public class FirstPanel extends JFrame {
         for (int i = 0; i < labelNames.length; i++) {
             label[i] = new JLabel(labelNames[i]);
             label[i].setFont(font);
-            gbc.gridx = 0; // First column
-            gbc.gridy = i; // Row i
+            
+            // Calculate grid positions
+            gbc.gridx = i % 2; // Column (0 or 1)
+            gbc.gridy = (i / 2) * 2; // Row (0, 2, or 4 for labels)
             secondPanel.add(label[i], gbc);
 
             field[i] = new JTextField(15); // Create the text field
-            gbc.gridx = 1; // Second column
+            gbc.gridy = (i / 2) * 2 + 1; // Row (1, 3, or 5 for text fields)
             secondPanel.add(field[i], gbc);
         }
     }
